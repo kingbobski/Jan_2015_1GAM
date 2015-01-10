@@ -27,14 +27,17 @@
             <kind>1</kind>
             <string>draw_set_font(fntMain);
 
-draw_text(0,0,"FPS: ");
-draw_text(64,0,string(fps));
+x= view_xview[0];
+y= view_yview[0];
 
-draw_text(0,32,"LAG : ");
-draw_text(64,32,string(room_speed - fps));
+draw_text(x,y,"FPS: ");
+draw_text(x +64,y,string(fps));
 
-draw_text(0,64,string("Ammo: "));
-draw_text(64,64,string(global.Ammo));
+draw_text(x,y + 32,"LAG : ");
+draw_text(x + 64,y + 32,string(room_speed - fps));
+
+draw_text(x,y + 64,string("Ammo: "));
+draw_text(x + 64,y + 64,string(global.Ammo));
 
 </string>
           </argument>
