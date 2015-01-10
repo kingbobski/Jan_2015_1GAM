@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>instance_create(0,0,objGUI);
+background_hspeed[0] = -0.25;
 CannonPosX = 0;
 CannonPosY = 0;
 
@@ -64,17 +65,6 @@ if(keyboard_check_pressed(vk_f2))
 }
 
 // KEYBOARD
-if(keyboard_check_direct(vk_right) || keyboard_check(ord('D')))
-{
-    motion_set(0,3);
-    background_hspeed[0] = -0.25;
-}
-
-if(keyboard_check(vk_left) || keyboard_check(ord('A')))
-{
-    motion_set(180,3);
-    background_hspeed[0] = 0.25;
-}
 
 if(keyboard_check(vk_up) || keyboard_check(ord('W')))
 {
@@ -97,41 +87,13 @@ if(direction = 0)
     CannonPosX = sprite_width;
     CannonPosY = 20;
 }
-if(direction = 180)
-{
-    CannonPosX = 0;
-    CannonPosY = 20;
-}
-
 
 // BULLETS
 if(keyboard_check_pressed(vk_space))
-{
-    
-    bullet = instance_create(x + CannonPosX,y + CannonPosY,objBullet);    
-
-    if(direction = 0)
-    {
-        bullet.direction = 0;
-        bullet.speed = 6;
-    }
-    if(direction = 180)
-    {
-        bullet.direction = 180;
-        bullet.speed = 6;
-    }
-    // PLACEHOLDER
-    if(direction = 90)
-    {
-        bullet.direction = 180;
-        bullet.speed = 6;
-    }
-    //ANOTHER PLACEHOLDER
-    if(direction = 270)
-    {
-        bullet.direction = 0;
-        bullet.speed = 6;
-    }
+{ 
+    bullet = instance_create(x + CannonPosX, y + CannonPosY,objBullet);
+    bullet.direction = 0;
+    bullet.speed = 8;   
 }
 </string>
           </argument>
