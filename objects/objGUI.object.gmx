@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -33,12 +33,11 @@ y= view_yview[0];
 draw_text(x,y,"FPS: ");
 draw_text(x +64,y,string(fps));
 
-draw_text(x,y + 32,"LAG : ");
-draw_text(x + 64,y + 32,string(room_speed - fps));
+draw_text(x,y + 16,"LAG : ");
+draw_text(x + 64,y + 16,string(room_speed - fps));
 
-draw_text(x,y + 64,string("Ammo: "));
-draw_text(x + 64,y + 64,string(global.Ammo));
-
+draw_text(x,y + 32,string("Ammo: "));
+draw_text(x + 64,y + 32,string(global.Ammo));
 </string>
           </argument>
         </arguments>
