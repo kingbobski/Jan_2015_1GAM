@@ -90,9 +90,10 @@ if(direction = 0)
 }
 
 // BULLETS
-if(keyboard_check_pressed(vk_space))
+if(keyboard_check_pressed(vk_space) &amp;&amp; global.Ammo &gt; 0)
 { 
     bullet = instance_create(x + CannonPosX, y + CannonPosY,objBullet);
+    global.Ammo -=1;
     bullet.direction = 0;
     bullet.speed = 8;   
 }
