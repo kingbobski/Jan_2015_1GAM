@@ -11,6 +11,8 @@
     <sprites name="Menu">
       <sprite>sprites\sprBtnPlay</sprite>
       <sprite>sprites\sprTitle</sprite>
+      <sprite>sprites\sprQuit</sprite>
+      <sprite>sprites\sprOptions</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -28,6 +30,8 @@
       <object>objects\objTitle</object>
       <object>objects\objMenuPlayer</object>
       <object>objects\objBtnPlay</object>
+      <object>objects\objBtnQuit</object>
+      <object>objects\objBtnOptions</object>
     </objects>
   </objects>
   <rooms name="rooms">
