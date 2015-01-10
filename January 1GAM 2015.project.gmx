@@ -9,7 +9,9 @@
     <sprite>sprites\sprPlayer</sprite>
     <sprite>sprites\sprBullet</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fntMain</font>
