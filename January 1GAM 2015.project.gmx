@@ -14,6 +14,7 @@
       <sprite>sprites\sprQuit</sprite>
       <sprite>sprites\sprOptions</sprite>
     </sprites>
+    <sprite>sprites\sprTrans</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -27,6 +28,7 @@
     <object>objects\objPlayer</object>
     <object>objects\objBullet</object>
     <object>objects\objGUI</object>
+    <object>objects\objWall</object>
     <objects name="Menu">
       <object>objects\objTitle</object>
       <object>objects\objMenuPlayer</object>
