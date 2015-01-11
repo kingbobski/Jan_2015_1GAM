@@ -87,6 +87,11 @@ if(keyboard_check_pressed(ord('F')))
     ini_close();
         
 }
+
+if(keyboard_check_pressed(vk_escape))
+{
+    room_goto(rmMenu);
+}
 </string>
           </argument>
         </arguments>
@@ -125,6 +130,8 @@ if(!FullScreen)
 {
     draw_text(room_width / 2 -256,200,"Press F to switch to Fullscreen");
 }
+
+draw_text(room_width / 2 -256,250,"Press Escape to return to Menu");
 </string>
           </argument>
         </arguments>
