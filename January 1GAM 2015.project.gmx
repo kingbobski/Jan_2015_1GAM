@@ -8,13 +8,14 @@
   <sprites name="sprites">
     <sprite>sprites\sprPlayer</sprite>
     <sprite>sprites\sprBullet</sprite>
+    <sprite>sprites\sprAmmoPickup</sprite>
+    <sprite>sprites\sprTrans</sprite>
     <sprites name="Menu">
       <sprite>sprites\sprBtnPlay</sprite>
       <sprite>sprites\sprTitle</sprite>
       <sprite>sprites\sprQuit</sprite>
       <sprite>sprites\sprOptions</sprite>
     </sprites>
-    <sprite>sprites\sprTrans</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -29,6 +30,7 @@
     <object>objects\objBullet</object>
     <object>objects\objGUI</object>
     <object>objects\objWall</object>
+    <object>objects\objAmmoPickup</object>
     <objects name="Menu">
       <object>objects\objTitle</object>
       <object>objects\objMenuPlayer</object>
