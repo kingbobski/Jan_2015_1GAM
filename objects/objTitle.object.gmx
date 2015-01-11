@@ -33,14 +33,7 @@ FullScreen = ini_read_real("Settings","FullScreen",false);
 
 if(ini_key_exists("Settings","FullScreen"))
 {
-    if(!FullScreen)
-    {
-        window_set_fullscreen(0);
-    }
-    if(FullScreen)
-    {
-        window_set_fullscreen(1);
-    }
+    window_set_fullscreen(FullScreen);
 }
 
 if(ini_key_exists("Settings","ResX") &amp;&amp; ini_key_exists("Settings","ResY"))

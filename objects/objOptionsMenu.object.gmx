@@ -80,12 +80,10 @@ if(keyboard_check_pressed(vk_numpad3) || keyboard_check_pressed(ord('3')))
 if(keyboard_check_pressed(ord('F')))
 {
     window_set_fullscreen(!window_get_fullscreen());
-    FullScreen = !FullScreen;
-    
-    ini_open("Options.ini");
-    ini_write_real("Settings","FullScreen",FullScreen);
-    ini_close();
         
+    ini_open("Options.ini");
+    ini_write_real("Settings","FullScreen",window_get_fullscreen());
+    ini_close();
 }
 
 if(keyboard_check_pressed(vk_escape))
@@ -122,11 +120,11 @@ draw_text(room_width /2 -256, 100,"Press 2 to select 1280x720");
 draw_text(room_width / 2 -256, 150,"Press 3 to select 1920x1080");
 
 // FULLSCREEN
-if(FullScreen)
+if(window_get_fullscreen() = true)
 {
     draw_text(room_width / 2 -256,200,"Press F to switch to Windowed");
 }
-if(!FullScreen)
+if(window_get_fullscreen() = false)
 {
     draw_text(room_width / 2 -256,200,"Press F to switch to Fullscreen");
 }
