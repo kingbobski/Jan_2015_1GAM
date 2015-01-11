@@ -40,6 +40,8 @@ if(ini_key_exists("Settings","ResX") &amp;&amp; ini_key_exists("Settings","ResY"
 {
     window_set_size(ResX,ResY);
 }
+
+ini_close();
 </string>
           </argument>
         </arguments>
