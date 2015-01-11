@@ -21,6 +21,7 @@
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fntMain</font>
+    <font>fonts\fntOptions</font>
   </fonts>
   <objects name="objects">
     <object>objects\objPlayer</object>
@@ -32,11 +33,13 @@
       <object>objects\objBtnPlay</object>
       <object>objects\objBtnQuit</object>
       <object>objects\objBtnOptions</object>
+      <object>objects\objOptionsMenu</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>
     <room>rooms\rmTest</room>
+    <room>rooms\rmOptions</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
