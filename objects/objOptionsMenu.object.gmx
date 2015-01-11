@@ -51,20 +51,41 @@
             <string>if(keyboard_check_pressed(vk_numpad1) || keyboard_check_pressed(ord('1')))
 {
     window_set_size(800,480);
+    
+    ini_open("Options.ini");
+    ini_write_real("Settings","ResX",800);
+    ini_write_real("Settings","ResY",480);
+    ini_close();
+    
 }
 if(keyboard_check_pressed(vk_numpad2) || keyboard_check_pressed(ord('2')))
 {
     window_set_size(1280,720);
+    
+    ini_open("Options.ini");
+    ini_write_real("Settings","ResX",1280);
+    ini_write_real("Settings","ResY",720);
+    ini_close();
 }
 if(keyboard_check_pressed(vk_numpad3) || keyboard_check_pressed(ord('3')))
 {
     window_set_size(1920,1080);
+    
+    ini_open("Options.ini");
+    ini_write_real("Settings","ResX",1920);
+    ini_write_real("Settings","ResY",1080);
+    ini_close();
 }
 
 if(keyboard_check_pressed(ord('F')))
 {
     window_set_fullscreen(!window_get_fullscreen());
     FullScreen = !FullScreen;
+    
+    ini_open("Options.ini");
+    ini_write_real("Settings","FullScreen",FullScreen);
+    ini_close();
+        
 }
 </string>
           </argument>
