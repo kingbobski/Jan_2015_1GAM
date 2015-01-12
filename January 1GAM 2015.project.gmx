@@ -32,6 +32,7 @@
     <object>objects\objBullet</object>
     <object>objects\objGUI</object>
     <object>objects\objWall</object>
+    <object>objects\objEnemyMaker</object>
     <object>objects\objAmmoPickup</object>
     <objects name="Menu">
       <object>objects\objTitle</object>

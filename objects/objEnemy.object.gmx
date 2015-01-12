@@ -28,6 +28,8 @@
             <string>image_speed = 0.25;
 
 Distance = 0;
+
+endYPos = floor(random_range(1,64));
 </string>
           </argument>
         </arguments>
@@ -56,9 +58,10 @@ if(Distance &gt; 300)
 {
     move_towards_point(objPlayer.x,objPlayer.y,3);
 }
-if(Distance &lt; 150)
+if(Distance &lt; 100)
 {
     speed = 0;
+    move_towards_point(x,objPlayer.y + endYPos,3);
 }
 </string>
           </argument>
@@ -82,7 +85,9 @@ if(Distance &lt; 150)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
+            <string>objEnemyMaker.enemyCount -= 1;
+
+instance_destroy();
 
 with(other)
 {
