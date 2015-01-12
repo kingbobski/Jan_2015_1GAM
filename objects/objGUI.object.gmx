@@ -38,6 +38,9 @@ draw_text(x + 64,y + 16,string(room_speed - fps));
 
 draw_text(x,y + 32,string("Ammo: "));
 draw_text(x + 64,y + 32,string(global.Ammo));
+
+draw_text(x,y + 48,"Player Speed: ");
+draw_text(x + 128,y + 48,string(objPlayer.plySpeed));
 </string>
           </argument>
         </arguments>
