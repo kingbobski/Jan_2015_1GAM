@@ -61,6 +61,7 @@ global.Ammo = 60;
           <argument>
             <kind>1</kind>
             <string>plySpeed -= 0.10;
+image_speed -= 0.15;
 
 //FPS debug
 
@@ -109,30 +110,47 @@ if(plySpeed &lt; 0)
     plySpeed = 0;
 }
 
-
+// HSPEED and anim
 if(plySpeed &lt; 20)
 {
     background_hspeed[0] = -0.25;
+    image_speed = 0.50;
 }
 if(plySpeed &gt; 20)
 {
     background_hspeed[0] = -0.50;
+    image_speed = 0.75;
 }
 if(plySpeed &gt; 40)
 {
     background_hspeed[0] = -0.75;
+    image_speed = 1.00;    
 }
 if(plySpeed &gt; 60)
 {
     background_hspeed[0] = -1.00;
+    image_speed = 1.25;
 }
 if(plySpeed &gt; 80)
 {
     background_hspeed[0] = -1.25;
+    image_speed = 1.50;
 }
 if(plySpeed = 100)
 {
     background_hspeed[0] = -1.50;
+    image_speed = 1.75;
+}
+
+// Player Anim
+if(image_speed &lt; 0.50)
+{
+    image_speed = 0.50;
+}
+
+if(image_speed &gt; 1.75)
+{
+    image_speed = 1.75;
 }
 
 
