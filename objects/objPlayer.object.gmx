@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>instance_create(0,0,objGUI);
 instance_create(0,0,objEnemyMaker);
+
+friction = 1;
+
 image_speed = 0.5;
 background_hspeed[0] = -0.25;
 CannonPosX = sprite_width;
