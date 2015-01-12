@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprPlayer</sprite>
+    <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprBullet</sprite>
     <sprite>sprites\sprAmmoPickup</sprite>
     <sprite>sprites\sprTrans</sprite>
@@ -27,6 +28,7 @@
   </fonts>
   <objects name="objects">
     <object>objects\objPlayer</object>
+    <object>objects\objEnemy</object>
     <object>objects\objBullet</object>
     <object>objects\objGUI</object>
     <object>objects\objWall</object>
