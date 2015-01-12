@@ -42,7 +42,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>
-    <room>rooms\rmTest</room>
+    <room>rooms\rmLevel</room>
     <room>rooms\rmOptions</room>
   </rooms>
   <help>
