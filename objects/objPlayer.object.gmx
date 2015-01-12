@@ -90,6 +90,13 @@ if(keyboard_check_pressed(vk_space) &amp;&amp; global.Ammo &gt; 0)
     bullet.direction = 0;
     bullet.speed = 8;   
 }
+
+// CONTROL AMMO COUNT
+if(global.Ammo &gt; 100)
+{
+    global.Ammo = 100;
+}
+
 </string>
           </argument>
         </arguments>
