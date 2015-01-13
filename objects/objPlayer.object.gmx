@@ -38,6 +38,7 @@ CannonPosY = 30;
 plySpeed = 1;
 
 global.Ammo = 60;
+score = 0;
 </string>
           </argument>
         </arguments>

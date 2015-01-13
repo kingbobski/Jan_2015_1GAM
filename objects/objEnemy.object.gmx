@@ -109,6 +109,7 @@ if(Distance &lt; 100)
           <argument>
             <kind>1</kind>
             <string>objEnemyMaker.enemyCount -= 1;
+score += 1;
 
 instance_destroy();
 

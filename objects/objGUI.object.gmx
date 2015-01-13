@@ -31,16 +31,19 @@ x= view_xview[0];
 y= view_yview[0];
 
 draw_text(x,y,"FPS: ");
-draw_text(x +64,y,string(fps));
+draw_text(x + 36,y,string(fps));
 
-draw_text(x,y + 16,"LAG : ");
-draw_text(x + 64,y + 16,string(room_speed - fps));
+draw_text(x,y + 16,"LAG: ");
+draw_text(x + 36,y + 16,string(room_speed - fps));
 
 draw_text(x,y + 32,string("Ammo: "));
-draw_text(x + 64,y + 32,string(global.Ammo));
+draw_text(x + 60,y + 32,string(global.Ammo));
 
 draw_text(x,y + 48,"Player Speed: ");
 draw_text(x + 105,y + 48,string(floor(objPlayer.plySpeed)));
+
+draw_text(x,y + 64,"Score: ");
+draw_text(x + 64, y + 64, string(score));
 </string>
           </argument>
         </arguments>
