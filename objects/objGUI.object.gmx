@@ -42,8 +42,11 @@ draw_text(x + 60,y + 32,string(global.Ammo));
 draw_text(x,y + 48,"Player Speed: ");
 draw_text(x + 105,y + 48,string(floor(objPlayer.plySpeed)));
 
-draw_text(x,y + 64,"Score: ");
-draw_text(x + 64, y + 64, string(score));
+draw_text(x,y + 64,"Boost: ");
+draw_text(x + 64, y + 64, string(floor(objPlayer.boost)));
+
+draw_text(x,y + 80,"Score: ");
+draw_text(x + 64, y + 80, string(score));
 </string>
           </argument>
         </arguments>

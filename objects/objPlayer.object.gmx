@@ -36,6 +36,7 @@ CannonPosX = sprite_width;
 CannonPosY = 30;
 
 plySpeed = 1;
+boost = 100;
 
 global.Ammo = 60;
 score = 0;
@@ -63,6 +64,7 @@ score = 0;
             <kind>1</kind>
             <string>plySpeed -= 0.10;
 image_speed -= 0.15;
+boost += 0.05;
 
 //FPS debug
 
@@ -87,9 +89,10 @@ if(keyboard_check(vk_down) || keyboard_check(ord('S')))
     motion_set(270,3);
 }
 
-if(keyboard_check(vk_right) || keyboard_check(ord('D')))
+if(keyboard_check(vk_right) || keyboard_check(ord('D')) &amp;&amp; boost &gt; 0)
 {
     plySpeed += 0.25;
+    boost -= 0.10;
 }
 if(keyboard_check(vk_left) || keyboard_check(ord('A')))
 {
@@ -109,6 +112,16 @@ if(plySpeed &gt; 100)
 if(plySpeed &lt; 0)
 {
     plySpeed = 0;
+}
+
+// BOOSTING
+if(boost &lt; 0)
+{
+    boost = 0;
+}
+if(boost &gt; 100)
+{
+    boost = 100;
 }
 
 // HSPEED and anim
